@@ -174,6 +174,8 @@ struct ContentView: View {
                         mapSettings.mapType = $0
                     }.padding([.top, .leading, .trailing], 16)
                 
+                // 標高スタイル
+                // リアル（既定）、フラット
                 Picker("Map Elevation", selection: $showElevation) {
                     Text("Realistic").tag(0)
                     Text("Flat").tag(1)
@@ -182,6 +184,8 @@ struct ContentView: View {
                         mapSettings.showElevation = $0
                 }.padding([.leading, .trailing], 16)
                 
+                // 現実世界にある消火栓や道路、建物などをベクター データ化した個々の地物をフィーチャといいます
+                // そのフィーチャを強調（既定）、ミュートするかの設定
                 Picker("Map Elevation", selection: $showEmphasis) {
                     Text("Default").tag(0)
                     Text("Muted").tag(1)
