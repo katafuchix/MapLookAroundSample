@@ -175,7 +175,7 @@ struct ContentView: View {
                     }.padding([.top, .leading, .trailing], 16)
                 
                 // 標高スタイル
-                // リアル（既定）、フラット
+                // フラット（既定）、リアル
                 Picker("Map Elevation", selection: $showElevation) {
                     Text("Realistic").tag(0)
                     Text("Flat").tag(1)
